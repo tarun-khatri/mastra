@@ -63,6 +63,11 @@ function resolveTracingStorageStrategy(
 type Resolve = (value: void | PromiseLike<void>) => void;
 
 /**
+ * @deprecated Use `MastraStorageExporter` from `@mastra/observability` instead.
+ * This class is preserved unchanged so existing integrations (including code
+ * that matches on the `mastra-default-observability-exporter` exporter name)
+ * keep working. It will be removed in a future major version.
+ *
  * Default storage-backed exporter. Buffers observability events and flushes them
  * in batches to the configured ObservabilityStorage backend with retry support.
  */
