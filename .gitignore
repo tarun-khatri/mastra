@@ -13,9 +13,8 @@ test-outputs/
 
 # Dev artifacts
 .dev/db/*
+.pr-review/
 
-.env
-.env.local
 .env.*.local
 
 **/tsconfig.tsbuildinfo
@@ -68,3 +67,4 @@ om-reflector-fixture.json
 .dev/lima
 .mastracode/
 /packages/core/__recordings__
+config.bat
